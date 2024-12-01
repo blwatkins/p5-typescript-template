@@ -1,0 +1,20 @@
+{
+  "name": "p5-typescript-template",
+  "version": "1.0.0",
+  "description": "A template project for using p5.js with TypeScript and Webpack.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "@brittni-and-the-polar-bear/p5-typescript-template"
+  },
+  "keywords": [
+    "template",
+    "p5",
+    "algorithmic-art"
+  ],
+  "author": "brittni and the polar bear",
+  "license": "AGPL-3.0"
+}

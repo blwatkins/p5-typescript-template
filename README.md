@@ -7,6 +7,12 @@ with
 and
 [Webpack](https://webpack.js.org/).
 
+# GitHub Workflows
+
+This template contains GitHub workflows designed to update project dependencies monthly.
+To learn more about dependabot configurations, visit the
+[GitHub Dependabot documentation]().
+
 # Attributions
 
 The favicon.ico of this template was designed by

@@ -11,9 +11,12 @@
     "url": "@brittni-and-the-polar-bear/p5-typescript-template"
   },
   "keywords": [
-    "template",
+    "algorithmic art",
+    "generative art",
     "p5",
-    "algorithmic-art"
+    "p5.js",
+    "template",
+    "typescript"
   ],
   "author": "brittni and the polar bear",
   "license": "AGPL-3.0"

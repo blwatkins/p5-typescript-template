@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack --mode development",
     "dev": "webpack-dev-server --mode development",
+    "lint": "eslint ./src",
     "prod": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,12 +31,17 @@
     "p5": "^1.11.2"
   },
   "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@stylistic/eslint-plugin": "^2.11.0",
+    "@types/eslint__js": "^8.42.3",
     "@types/p5": "^1.7.6",
     "css-loader": "^7.1.2",
+    "eslint": "^9.16.0",
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
     "ts-loader": "^9.5.1",
     "typescript": "^5.7.2",
+    "typescript-eslint": "^8.16.0",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"

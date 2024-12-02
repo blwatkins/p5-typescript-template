@@ -11,7 +11,7 @@ and
 
 This template contains GitHub workflows designed to update project dependencies monthly.
 To learn more about dependabot configurations, visit the
-[GitHub Dependabot documentation]().
+[GitHub Dependabot documentation](https://docs.github.com/en/code-security/dependabot).
 
 # Attributions
 

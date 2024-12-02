@@ -4,6 +4,9 @@
   "description": "A template project for using p5.js with TypeScript and Webpack.",
   "private": true,
   "scripts": {
+    "build": "webpack --mode development",
+    "dev": "webpack-dev-server --mode development",
+    "prod": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +21,10 @@
     "template",
     "typescript"
   ],
-  "author": "brittni and the polar bear",
+  "author": {
+    "name": "brittni and the polar bear",
+    "url": "https://linktr.ee/brittniandthepolarbear"
+  },
   "license": "AGPL-3.0",
   "dependencies": {
     "p5": "^1.11.2"

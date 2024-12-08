@@ -15,6 +15,11 @@
  * See the GNU Affero General Public License for more details.
  */
 
+// TODO - update copyright
+// TODO - test bundling
+// TODO - test production build
+// TODO - test stats
+
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -22,7 +27,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: {
-        sketch: './src/sketch.ts'
+        sketch: {
+            import: './src/main/sketch.ts',
+            dependOn: [ 'p5' ]
+        },
+        p5: 'p5'
     },
     devtool: 'inline-source-map',
     module: {

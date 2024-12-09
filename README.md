@@ -58,6 +58,5 @@ You can find the original icon on
 
 # LICENSE
 
-The source code of this project is licensed under the
-[GNU Affero General Public Version 3.0 License](https://www.gnu.org/licenses/agpl-3.0.en.html).
+The source code of this project is licensed under the MIT License.
 The full text of the license is included with this source code.

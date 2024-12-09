@@ -2,6 +2,8 @@
   "compilerOptions": {
     /* Language and Environment */
     "target": "es2022",
+    "skipLibCheck": false,
+    "skipDefaultLibCheck": false,
 
     /* Modules */
     "module": "es2022",

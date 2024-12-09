@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2024 brittni and the polar bear LLC.
  *
- * This file is a part of brittni and the polar bear's p5.js TypeScript template,
+ * This file is a part of brittni and the polar bear's @baptb/genart template,
  * which is released under the GNU Affero General Public License, Version 3.0.
  * You may not use this file except in compliance with the license.
  *
@@ -13,12 +13,15 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU Affero General Public License for more details.
+ *
+ * The visual outputs of this source code are licensed under the
+ * Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) License.
+ * You should have received a copy of the CC BY-NC-ND 4.0 License with this program.
+ * See OUTPUT-LICENSE or go to https://creativecommons.org/licenses/by-nc-nd/4.0/
+ * for full license details.
  */
 
 // TODO - update copyright
-// TODO - test bundling
-// TODO - test production build
-// TODO - test stats
 
 const path = require('path');
 
@@ -48,11 +51,11 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: [ '.tsx', '.ts', '.jsx', '.js', '.json' ]
+        extensions: [ '.tsx', '.ts', '.js', '.json' ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'template sketch',
+            title: '@batpb/genart template',
             inject: 'body',
             favicon: './assets/icon/favicon.ico'
         }),

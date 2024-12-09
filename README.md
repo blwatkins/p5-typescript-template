@@ -9,6 +9,8 @@ and
 
 # Getting Started
 
+<!-- TODO - replace scripts with new names and add new scripts -->
+
 Create a new project from this template using the green "Use this template" button above.
 
 Write the project's source code in the `src/` directory.

@@ -60,5 +60,5 @@ You can find the original icon on
 
 # LICENSE
 
-The source code of this project is licensed under the MIT License.
+This project is licensed under the MIT License.
 The full text of the license is included with this source code.

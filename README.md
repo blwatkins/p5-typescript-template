@@ -62,6 +62,9 @@ This template contains GitHub workflows designed to update project dependencies 
 To learn more about dependabot configurations, visit the
 [GitHub Dependabot documentation](https://docs.github.com/en/code-security/dependabot).
 
+[![CodeQL](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/codeql.yml/badge.svg)](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/codeql.yml)
+[![Node.js Build](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/node-js.yml/badge.svg)](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/node-js.yml)
+
 # Attributions
 
 The favicon.ico of this template was designed by

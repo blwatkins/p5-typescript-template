@@ -7,7 +7,7 @@
     "build:dev": "webpack --mode development",
     "build:prod": "webpack --mode production",
     "dev": "webpack-dev-server --mode development",
-    "lint:js": "eslint -c eslint.config.js.mjs eslint.config.ts.mjs eslint.config.js.mjs webpack.config.js",
+    "lint:js": "eslint -c eslint.config.js.mjs ./eslint.config.js.mjs ./eslint.config.ts.mjs ./webpack.config.js",
     "lint:ts": "eslint -c eslint.config.ts.mjs ./src",
     "stats": "webpack --mode development --profile --json > ./out/stats.json",
     "test": "echo \"Error: no test specified\" && exit 1"

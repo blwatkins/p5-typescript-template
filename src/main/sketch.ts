@@ -17,7 +17,7 @@
 
 import P5Lib from 'p5';
 
-import '../assets/style/sketch.css';
+import '../../assets/style/sketch.css';
 
 function sketch(p5: P5Lib): void {
     p5.setup = (): void => {

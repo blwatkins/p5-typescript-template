@@ -58,9 +58,13 @@ and open a new browser window for the `index.html` file bundled with the compile
 
 # GitHub Workflows
 
-This template contains GitHub workflows designed to update project dependencies monthly.
-To learn more about dependabot configurations, visit the
+This template contains a GitHub workflows designed to update project dependencies scan the code for security vulnerabilities every month.
+
+To learn more about Dependabot configurations, visit the
 [GitHub Dependabot documentation](https://docs.github.com/en/code-security/dependabot).
+
+To learn more about CodeQL configurations, visit the
+[GitHub CodeQL documentation](https://codeql.github.com/docs/).
 
 [![CodeQL](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/codeql.yml/badge.svg)](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/codeql.yml)
 [![Node.js Build](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/node-js.yml/badge.svg)](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/node-js.yml)

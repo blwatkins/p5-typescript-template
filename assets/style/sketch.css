@@ -15,6 +15,11 @@
  * See the GNU Affero General Public License for more details.
  */
 
+/*
+ * To remove borders and scroll bars from the sketch page,
+ * and to keep canvas in the center of the browser window at all times.
+ */
+
 html, body {
     margin: 0;
     padding: 0;

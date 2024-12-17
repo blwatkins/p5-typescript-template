@@ -50,7 +50,7 @@ updates:
     directory: "/"
     schedule:
       interval: monthly
-    target-branch: "development-main"
+    target-branch: "main"
     commit-message:
       prefix: "dependabot github-action update"
       include: "scope"

@@ -2,6 +2,8 @@
   "compilerOptions": {
     /* Language and Environment */
     "target": "es2022",
+    "skipLibCheck": false,
+    "skipDefaultLibCheck": false,
 
     /* Modules */
     "module": "es2022",
@@ -10,8 +12,8 @@
 
     /* JSON Modules */
     "resolveJsonModule": true,
-    "resolvePackageJsonExports": true,
-    "resolvePackageJsonImports": true,
+    "resolvePackageJsonExports": false,
+    "resolvePackageJsonImports": false,
 
     /* Emit */
     "outDir": "./out/compiled",

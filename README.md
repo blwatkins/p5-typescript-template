@@ -15,19 +15,38 @@ Write the project's source code in the `src/` directory.
 The `src/sketch.ts` file provided contains a simple p5.js program with a black background and a white circle.
 This file will be used as the entry point for webpack.
 
-```shell
-npm run lint
-```
-
-`npm run lint` will lint the source code using ESlint, identifying syntactic and stylistic errors based on a configured set of rules.
-Linting configurations and rules can be found, edited, and updated in `eslint.config.mjs`.
+## Linting
 
 ```shell
-npm run build
+npm run lint:ts
 ```
 
-`npm run build` will bundle your sketch in development mode using webpack.
+`npm run lint:ts` will lint the TypeScript source code using ESlint, identifying syntactic and stylistic errors based on a configured set of rules.
+TypeScript linting configurations and rules can be found, edited, and updated in `eslint.config.ts.mjs`.
+
+```shell
+npm run lint:js
+```
+
+`npm run lint:js` will lint the JavaScript configuration files using ESlint, identifying syntactic and stylistic errors based on a configured set of rules.
+JavaScript linting configurations and rules can be found, edited, and updated in `eslint.config.js.mjs`.
+
+## Building
+
+```shell
+npm run build:dev
+```
+
+`npm run build:dev` will bundle your sketch in development mode using webpack.
 This should identify any compiler errors present in your source code.
+
+```shell
+npm run build:prod
+```
+
+`npm run build:prod` will create a production-ready bundle of the source code.
+
+## Serving
 
 ```shell
 npm run dev
@@ -37,17 +56,18 @@ npm run dev
 start a localhost development server (`127.0.0.1:8080`),
 and open a new browser window for the `index.html` file bundled with the compiled sketch.
 
-```shell
-npm run prod
-```
-
-`npm run prod` will create a production-ready bundle of the source code.
-
 # GitHub Workflows
 
-This template contains GitHub workflows designed to update project dependencies monthly.
-To learn more about dependabot configurations, visit the
+This template contains a GitHub workflows designed to update project dependencies scan the code for security vulnerabilities every month.
+
+To learn more about Dependabot configurations, visit the
 [GitHub Dependabot documentation](https://docs.github.com/en/code-security/dependabot).
+
+To learn more about CodeQL configurations, visit the
+[GitHub CodeQL documentation](https://codeql.github.com/docs/).
+
+[![CodeQL](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/codeql.yml/badge.svg)](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/codeql.yml)
+[![Node.js Build](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/node-js.yml/badge.svg)](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/node-js.yml)
 
 # Attributions
 
@@ -58,6 +78,5 @@ You can find the original icon on
 
 # LICENSE
 
-The source code of this project is licensed under the
-[GNU Affero General Public Version 3.0 License](https://www.gnu.org/licenses/agpl-3.0.en.html).
+This project is licensed under the MIT License.
 The full text of the license is included with this source code.

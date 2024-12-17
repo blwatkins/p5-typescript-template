@@ -22,31 +22,19 @@
  * SOFTWARE.
  */
 
-/*
- * To remove borders and scroll bars from the sketch page,
- * and to keep canvas in the center of the browser window at all times.
- */
+import P5Lib from 'p5';
 
-html, body {
-    margin: 0;
-    padding: 0;
-    border: none;
+import '../../assets/style/sketch.css';
+
+function sketch(p5: P5Lib): void {
+    p5.setup = (): void => {
+        p5.createCanvas(720, 720);
+    };
+
+    p5.draw = (): void => {
+        p5.background(0);
+        p5.ellipse(p5.mouseX, p5.mouseY, 100, 100);
+    };
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-}
-
-main {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-canvas {
-    grid-row: 1;
-    grid-column: 1;
-}
+new P5Lib(sketch);

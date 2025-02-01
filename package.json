@@ -39,7 +39,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "p5": "^1.11.2"
+    "p5": "^1.11.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

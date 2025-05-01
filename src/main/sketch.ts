@@ -33,6 +33,7 @@ function sketch(p5: P5Lib): void {
 
     p5.draw = (): void => {
         p5.background(0);
+        p5.fill(255);
         p5.ellipse(p5.mouseX, p5.mouseY, 100, 100);
     };
 }

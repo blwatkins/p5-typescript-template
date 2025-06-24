@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (C) 2024 brittni and the polar bear LLC.
+ * Copyright (C) 2024-2025 brittni and the polar bear LLC.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -60,19 +60,21 @@ module.exports = {
         }),
         new MiniCssExtractPlugin()
     ],
+    // NOTE: optimization configuration can be added and removed as-needed
+    // NOTE: adding optimization may increase build time
     optimization: {
-        concatenateModules: true,
-        emitOnErrors: false,
-        mangleExports: true,
-        mergeDuplicateChunks: true,
-        minimize: true,
-        providedExports: true,
-        removeAvailableModules: true,
-        removeEmptyChunks: true,
-        splitChunks: {
-            chunks: 'all'
-        },
-        usedExports: true
+        emitOnErrors: false
+        // concatenateModules: true,
+        // mangleExports: true,
+        // mergeDuplicateChunks: true,
+        // minimize: true,
+        // providedExports: true,
+        // removeAvailableModules: true,
+        // removeEmptyChunks: true,
+        // splitChunks: {
+        //     chunks: 'all'
+        // },
+        // usedExports: true
     },
     output: {
         path: path.resolve(__dirname, 'out/dist'),

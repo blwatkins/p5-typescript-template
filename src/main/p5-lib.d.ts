@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (C) 2024-2025 brittni and the polar bear LLC.
+ * Copyright (C) 2025 brittni and the polar bear LLC.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,31 +22,6 @@
  * SOFTWARE.
  */
 
-/*
- * To remove borders and scroll bars from the sketch page,
- * and to keep canvas in the center of the browser window at all times.
- */
-
-html, body {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-
-body {
-    width: 100vw;
-    height: 100vh;
-}
-
-main {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-canvas {
-    grid-row: 1;
-    grid-column: 1;
-}
+import p5 from 'p5';
+export = p5;
+export as namespace P5Lib;

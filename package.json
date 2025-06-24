@@ -1,6 +1,6 @@
 {
   "name": "p5-typescript-template",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A template project for using p5.js with TypeScript and Webpack.",
   "private": true,
   "scripts": {
@@ -29,35 +29,34 @@
   ],
   "author": {
     "name": "brittni and the polar bear",
-    "url": "https://linktr.ee/brittniandthepolarbear"
+    "url": "https://brittni-and-the-polar-bear.github.io/"
   },
   "contributors": [
     {
       "name": "brittni watkins",
-      "url": "https://linktr.ee/brittniwatkins"
+      "url": "https://blwatkins.github.io/"
     }
   ],
   "license": "MIT",
   "dependencies": {
-    "p5": "^1.11.3"
+    "p5": "^1.11.8"
   },
   "devDependencies": {
-    "@eslint/js": "^9.19.0",
-    "@stylistic/eslint-plugin": "^3.0.1",
-    "@types/eslint__js": "^8.42.3",
+    "@eslint/js": "^9.29.0",
+    "@stylistic/eslint-plugin": "^5.0.0",
     "@types/p5": "^1.7.6",
     "css-loader": "^7.1.2",
-    "eslint": "^9.19.0",
-    "eslint-plugin-es-x": "^8.4.1",
-    "eslint-plugin-n": "^17.15.1",
+    "eslint": "^9.29.0",
+    "eslint-plugin-es-x": "^8.7.0",
+    "eslint-plugin-n": "^17.20.0",
     "eslint-plugin-security": "^3.0.1",
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
     "ts-loader": "^9.5.2",
-    "typescript": "^5.7.3",
-    "typescript-eslint": "^8.23.0",
-    "webpack": "^5.97.1",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.35.0",
+    "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.0"
+    "webpack-dev-server": "^5.2.2"
   }
 }

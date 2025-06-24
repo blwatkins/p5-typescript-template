@@ -15,6 +15,14 @@ Write the project's source code in the `src/` directory.
 The `src/sketch.ts` file provided contains a simple p5.js program with a black background and a white circle.
 This file will be used as the entry point for webpack.
 
+## Installation
+
+```shell
+npm install
+```
+
+`npm install` will install all the dependencies required to run this project.
+
 ## Linting
 
 ```shell
@@ -52,13 +60,11 @@ npm run build:prod
 npm run dev
 ```
 
-`npm run dev` will bundle the sketch in development mode,
-start a localhost development server (`127.0.0.1:8080`),
-and open a new browser window for the `index.html` file bundled with the compiled sketch.
+`npm run dev` will bundle the sketch in development mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
 
 # GitHub Workflows
 
-This template contains a GitHub workflows designed to update project dependencies scan the code for security vulnerabilities every month.
+This template contains a GitHub workflows designed to update project dependencies and scan the code for security vulnerabilities every month.
 
 To learn more about Dependabot configurations, visit the
 [GitHub Dependabot documentation](https://docs.github.com/en/code-security/dependabot).

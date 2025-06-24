@@ -60,10 +60,10 @@ module.exports = {
         }),
         new MiniCssExtractPlugin()
     ],
-    // optimization configuration can be added as-needed
-    // adding optimization may increase build time
+    // NOTE: optimization configuration can be added and removed as-needed
+    // NOTE: adding optimization may increase build time
     optimization: {
-        emitOnErrors: false,
+        emitOnErrors: false
         // concatenateModules: true,
         // mangleExports: true,
         // mergeDuplicateChunks: true,

@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (C) 2024 brittni and the polar bear LLC.
+ * Copyright (C) 2024-2025 brittni and the polar bear LLC.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -48,8 +48,7 @@ export default tsEslint.config(
             ecmaVersion: 2022,
             sourceType: 'module',
             parserOptions: {
-                projectService: true,
-                tsconfigRootDir: import.meta.dirname
+                projectService: true
             }
         },
         rules: {
@@ -207,7 +206,7 @@ export default tsEslint.config(
 
             '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
 
-            '@typescript-eslint/no-explicit-any': 'off',
+            '@typescript-eslint/no-explicit-any': 'error',
 
             '@typescript-eslint/no-extraneous-class': ['error', {
                 allowStaticOnly: true
@@ -215,7 +214,7 @@ export default tsEslint.config(
 
             '@typescript-eslint/no-inferrable-types': 'off',
 
-            '@typescript-eslint/prefer-for-of': 'off',
+            '@typescript-eslint/prefer-for-of': 'error',
 
             '@typescript-eslint/restrict-template-expressions': ['error', {
                 allowNumber: true,

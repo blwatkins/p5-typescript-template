@@ -60,21 +60,8 @@ module.exports = {
         }),
         new MiniCssExtractPlugin()
     ],
-    // NOTE: optimization configuration can be added and removed as-needed
-    // NOTE: adding optimization may increase build time
     optimization: {
         emitOnErrors: false
-        // concatenateModules: true,
-        // mangleExports: true,
-        // mergeDuplicateChunks: true,
-        // minimize: true,
-        // providedExports: true,
-        // removeAvailableModules: true,
-        // removeEmptyChunks: true,
-        // splitChunks: {
-        //     chunks: 'all'
-        // },
-        // usedExports: true
     },
     output: {
         path: path.resolve(__dirname, 'out/dist'),

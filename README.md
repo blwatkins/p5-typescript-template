@@ -64,7 +64,7 @@ npm run dev
 
 # GitHub Workflows
 
-This template contains a GitHub workflows designed to update project dependencies and scan the code for security vulnerabilities every month.
+This template contains GitHub workflows designed to update project dependencies and scan the code for security vulnerabilities every month.
 
 To learn more about Dependabot configurations, visit the
 [GitHub Dependabot documentation](https://docs.github.com/en/code-security/dependabot).

@@ -49,7 +49,7 @@ export default tsEslint.config(
             sourceType: 'module',
             parserOptions: {
                 projectService: true,
-                tsconfigRootDir: import.meta.dirname
+                tsconfigRootDir: './'
             }
         },
         rules: {

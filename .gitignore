@@ -8,3 +8,6 @@ out/
 
 # WebStorm and JetBrains IDEs
 .idea/
+
+# Visual Studio Code
+.vscode/

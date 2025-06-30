@@ -1,6 +1,6 @@
 {
   "name": "p5-typescript-template",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "A template project for using p5.js with TypeScript and Webpack.",
   "private": true,
   "scripts": {
@@ -42,11 +42,11 @@
     "p5": "^1.11.8"
   },
   "devDependencies": {
-    "@eslint/js": "^9.29.0",
-    "@stylistic/eslint-plugin": "^5.0.0",
+    "@eslint/js": "^9.30.0",
+    "@stylistic/eslint-plugin": "^5.1.0",
     "@types/p5": "^1.7.6",
     "css-loader": "^7.1.2",
-    "eslint": "^9.29.0",
+    "eslint": "^9.30.0",
     "eslint-plugin-es-x": "^8.7.0",
     "eslint-plugin-n": "^17.20.0",
     "eslint-plugin-security": "^3.0.1",

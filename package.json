@@ -1,6 +1,6 @@
 {
   "name": "p5-typescript-template",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "A template project for using p5.js with TypeScript and Webpack.",
   "private": true,
   "scripts": {

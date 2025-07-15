@@ -42,20 +42,20 @@
     "p5": "^1.11.8"
   },
   "devDependencies": {
-    "@eslint/js": "^9.30.0",
+    "@eslint/js": "^9.31.0",
     "@stylistic/eslint-plugin": "^5.1.0",
     "@types/p5": "^1.7.6",
     "css-loader": "^7.1.2",
-    "eslint": "^9.30.0",
-    "eslint-plugin-es-x": "^8.7.0",
-    "eslint-plugin-n": "^17.20.0",
+    "eslint": "^9.31.0",
+    "eslint-plugin-es-x": "^9.0.0",
+    "eslint-plugin-n": "^17.21.0",
     "eslint-plugin-security": "^3.0.1",
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
     "ts-loader": "^9.5.2",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.35.1",
-    "webpack": "^5.99.9",
+    "typescript-eslint": "^8.37.0",
+    "webpack": "^5.100.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2"
   }

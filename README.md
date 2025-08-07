@@ -86,3 +86,7 @@ You can find the original icon on
 
 This project is licensed under the MIT License.
 The full text of the license is included with this source code.
+
+----
+
+Copyright (C) 2024-2025 brittni and the polar bear LLC.

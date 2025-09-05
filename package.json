@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "@brittni-and-the-polar-bear/p5-typescript-template"
+    "url": "git+https://github.com/blwatkins/p5-typescript-template.git"
   },
   "keywords": [
     "algorithmic art",
@@ -28,15 +28,9 @@
     "template"
   ],
   "author": {
-    "name": "brittni and the polar bear",
-    "url": "https://brittni-and-the-polar-bear.github.io/"
+    "name": "brittni watkins",
+    "url": "https://blwatkins.github.io/"
   },
-  "contributors": [
-    {
-      "name": "brittni watkins",
-      "url": "https://blwatkins.github.io/"
-    }
-  ],
   "license": "MIT",
   "dependencies": {
     "p5": "^1.11.9"

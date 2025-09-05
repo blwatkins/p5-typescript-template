@@ -1,27 +1,3 @@
-/*
- * MIT License
- *
- * Copyright (C) 2024-2025 brittni and the polar bear LLC.
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- */
-
 /* This configuration is designed to lint all JavaScript configuration files */
 
 import eslint from '@eslint/js';
@@ -34,13 +10,13 @@ import stylistic from '@stylistic/eslint-plugin';
 
 export default [
     eslint.configs.recommended,
-    es_x.configs['flat/restrict-to-es2022'],
+    es_x.configs['flat/restrict-to-es2023'],
     node.configs['flat/recommended'],
     security.configs.recommended,
-    stylistic.configs['recommended-flat'],
+    stylistic.configs['recommended'],
     {
         languageOptions: {
-            ecmaVersion: 2022,
+            ecmaVersion: 2023,
             sourceType: 'module'
         },
         rules: {
@@ -142,19 +118,11 @@ export default [
                 'single',
                 {
                     avoidEscape: true,
-                    allowTemplateLiterals: true
+                    allowTemplateLiterals: 'always'
                 }
             ],
 
-            '@stylistic/semi': ['error', 'always'],
-
-            /* eslint-plugin-security */
-
-            'security/detect-object-injection': 'off',
-
-            /* eslint-plugin-n */
-
-            'n/no-missing-import': 'off'
+            '@stylistic/semi': ['error', 'always']
         }
     }
 ];

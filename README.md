@@ -146,4 +146,4 @@ The full text of the license is included with this source code.
 
 ----
 
-Copyright &copy; 2024-2025 brittni and the polar bear LLC.
+Copyright &copy; 2023-2025 brittni and the polar bear LLC.

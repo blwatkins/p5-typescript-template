@@ -1,4 +1,4 @@
-# p5-typescript-template
+# p5.js TypeScript Template
 
 A template project for using
 [p5.js](https://p5js.org/)
@@ -29,14 +29,14 @@ npm install
 npm run lint:ts
 ```
 
-`npm run lint:ts` will lint the TypeScript source code using ESlint, identifying syntactic and stylistic errors based on a configured set of rules.
+`npm run lint:ts` will lint the TypeScript source code using ESLint, identifying syntactic and stylistic errors based on a configured set of rules.
 TypeScript linting configurations and rules can be found, edited, and updated in `eslint.config.ts.mjs`.
 
 ```shell
 npm run lint:js
 ```
 
-`npm run lint:js` will lint the JavaScript configuration files using ESlint, identifying syntactic and stylistic errors based on a configured set of rules.
+`npm run lint:js` will lint the JavaScript configuration files using ESLint, identifying syntactic and stylistic errors based on a configured set of rules.
 JavaScript linting configurations and rules can be found, edited, and updated in `eslint.config.js.mjs`.
 
 ## Building
@@ -47,12 +47,31 @@ npm run build:dev
 
 `npm run build:dev` will bundle your sketch in development mode using webpack.
 This should identify any compiler errors present in your source code.
+The webpack build configuration can be found in `webpack.config.cjs`.
 
 ```shell
 npm run build:prod
 ```
 
-`npm run build:prod` will create a production-ready bundle of the source code.
+`npm run build:prod` will bundle your sketch in production mode using webpack.
+The webpack build configuration can be found in `webpack.config.cjs`.
+
+```shell
+npm run build:dev:single-file
+```
+
+`npm run build:dev:single-file` will bundle your sketch in development mode using webpack.
+The resulting bundle will have your source code and all its dependencies in a single JavaScript file.
+This should identify any compiler errors present in your source code.
+The webpack build configuration can be found in `webpack.single-file.config.cjs`.
+
+```shell
+npm run build:prod:single-file
+```
+
+`npm run build:prod:single-file` will bundle your sketch in production mode using webpack.
+The resulting bundle will have your source code and all its dependencies in a single JavaScript file.
+The webpack build configuration can be found in `webpack.single-file.config.cjs`.
 
 ## Serving
 
@@ -61,6 +80,24 @@ npm run dev
 ```
 
 `npm run dev` will bundle the sketch in development mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
+
+```shell
+npm run dev:single-file
+```
+
+`npm run dev:single-file` will bundle the sketch in development mode with `webpack.single-file.config.cjs`, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
+
+```shell
+npm run dev:prod
+```
+
+`npm run dev:prod` will bundle the sketch in production mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
+
+```shell
+npm run dev:prod:single-file
+```
+
+`npm run dev:prod:single-file` will bundle the sketch in production mode with `webpack.single-file.config.cjs`, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
 
 # GitHub Workflows
 
@@ -73,7 +110,7 @@ To learn more about CodeQL configurations, visit the
 [GitHub CodeQL documentation](https://codeql.github.com/docs/).
 
 [![CodeQL](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/codeql.yml/badge.svg)](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/codeql.yml)
-[![Node.js Build](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/node-js.yml/badge.svg)](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/node-js.yml)
+[![npm Build](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/npm-build.yml/badge.svg)](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/npm-build.yml)
 
 # Attributions
 
@@ -89,4 +126,4 @@ The full text of the license is included with this source code.
 
 ----
 
-Copyright (C) 2024-2025 brittni and the polar bear LLC.
+Copyright &copy; 2024-2025 brittni and the polar bear LLC.

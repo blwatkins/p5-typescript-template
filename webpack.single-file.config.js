@@ -27,11 +27,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: {
-        sketch: {
+        main: {
             import: './src/sketch.ts',
-            dependOn: ['p5']
         },
-        p5: 'p5'
     },
     devtool: 'inline-source-map',
     module: {

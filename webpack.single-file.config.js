@@ -28,8 +28,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     entry: {
         main: {
-            import: './src/sketch.ts',
-        },
+            import: './src/sketch.ts'
+        }
     },
     devtool: 'inline-source-map',
     module: {

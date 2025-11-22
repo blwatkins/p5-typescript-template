@@ -20,20 +20,20 @@
  * SOFTWARE.
  */
 
-import P5Lib from 'p5';
+import p5 from 'p5';
 
-import '../../assets/style/sketch.css';
+import '../assets/style/sketch.css';
 
-function sketch(p5: P5Lib): void {
-    p5.setup = (): void => {
-        p5.createCanvas(720, 720);
+function sketch(ctx: p5): void {
+    ctx.setup = (): void => {
+        ctx.createCanvas(720, 720);
     };
 
-    p5.draw = (): void => {
-        p5.background(0);
-        p5.fill(255);
-        p5.ellipse(p5.mouseX, p5.mouseY, 100, 100);
+    ctx.draw = (): void => {
+        ctx.background(0);
+        ctx.fill(255);
+        ctx.ellipse(ctx.mouseX, ctx.mouseY, 100, 100);
     };
 }
 
-new P5Lib(sketch);
+new p5(sketch);

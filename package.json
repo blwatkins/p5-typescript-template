@@ -1,15 +1,19 @@
 {
   "name": "p5-typescript-template",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "A template project for using p5.js with TypeScript and Webpack.",
   "private": true,
   "scripts": {
     "build:dev": "webpack --mode development",
+    "build:dev:single-file": "webpack --mode development --config webpack.single-file.config.cjs",
     "build:prod": "webpack --mode production",
+    "build:prod:single-file": "webpack --mode production --config webpack.single-file.config.cjs",
     "dev": "webpack-dev-server --mode development",
-    "lint:js": "eslint -c eslint.config.js.mjs ./eslint.config.js.mjs ./eslint.config.ts.mjs ./webpack.config.js",
+    "dev:single-file": "webpack-dev-server --mode development --config webpack.single-file.config.cjs",
+    "dev:prod": "webpack-dev-server --mode production",
+    "dev:prod:single-file": "webpack-dev-server --mode production --config webpack.single-file.config.cjs",
+    "lint:js": "eslint -c eslint.config.js.mjs ./eslint.config.js.mjs ./eslint.config.ts.mjs ./webpack.config.cjs ./webpack.single-file.config.cjs",
     "lint:ts": "eslint -c eslint.config.ts.mjs ./src",
-    "stats": "webpack --mode development --profile --json > ./out/stats.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -33,12 +37,11 @@
   },
   "license": "MIT",
   "dependencies": {
-    "p5": "^1.11.11"
+    "p5": "^2.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@stylistic/eslint-plugin": "^5.6.1",
-    "@types/p5": "^1.7.7",
     "css-loader": "^7.1.2",
     "eslint": "^9.39.1",
     "eslint-plugin-es-x": "^9.1.2",

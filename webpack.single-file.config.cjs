@@ -27,11 +27,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: {
-        sketch: {
-            import: './src/main/sketch.ts',
-            dependOn: ['p5']
-        },
-        p5: 'p5'
+        main: {
+            import: './src/sketch.ts'
+        }
     },
     devtool: 'inline-source-map',
     module: {
@@ -48,7 +46,7 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.js', '.json']
+        extensions: ['.ts', '.js']
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -62,15 +60,15 @@ module.exports = {
         emitOnErrors: false
     },
     output: {
-        path: path.resolve(__dirname, 'out/dist'),
-        filename: '[name].[fullhash:8].js',
-        sourceMapFilename: '[name].[fullhash:8].map',
-        chunkFilename: '[name].[fullhash:8].js',
+        path: path.resolve(__dirname, '_dist'),
+        filename: '[name].js',
+        sourceMapFilename: '[name].map',
+        chunkFilename: '[name].js',
         clean: true
     },
     devServer: {
         static: {
-            directory: path.join(__dirname, 'out/dist')
+            directory: path.join(__dirname, '_dist')
         },
         client: {
             overlay: true

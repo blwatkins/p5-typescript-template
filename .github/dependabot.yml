@@ -16,6 +16,9 @@ updates:
     commit-message:
       prefix: "dependabot npm update"
       include: "scope"
+    labels:
+      - "dependencies"
+      - "npm"
     groups:
       development-dependencies:
         applies-to: version-updates
@@ -54,3 +57,6 @@ updates:
     commit-message:
       prefix: "dependabot github-action update"
       include: "scope"
+    labels:
+      - "dependencies"
+      - "github actions"

@@ -4,7 +4,7 @@
 node_modules/
 
 # bundling, testing, and coverage output
-out/
+_dist/
 
 # WebStorm and JetBrains IDEs
 .idea/

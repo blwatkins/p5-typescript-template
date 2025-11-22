@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-/* This configuration is designed to lint all JavaScript configuration files */
+/* This configuration is designed to lint all JavaScript files in the project. */
 
 import eslint from '@eslint/js';
 
@@ -121,7 +121,7 @@ export default [
                 }
             ],
 
-            '@stylistic/indent-binary-ops': 'off',
+            '@stylistic/indent-binary-ops': ['error', 4],
 
             '@stylistic/member-delimiter-style': ['error', {
                 multiline: {

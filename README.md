@@ -25,12 +25,16 @@ npm install
 
 ## Linting
 
+### Linting TypeScript
+
 ```shell
 npm run lint:ts
 ```
 
 `npm run lint:ts` will lint the TypeScript source code using ESLint, identifying syntactic and stylistic errors based on a configured set of rules.
 TypeScript linting configurations and rules can be found, edited, and updated in `eslint.config.ts.mjs`.
+
+### Linting JavaScript
 
 ```shell
 npm run lint:js
@@ -41,6 +45,8 @@ JavaScript linting configurations and rules can be found, edited, and updated in
 
 ## Building
 
+### Development Mode
+
 ```shell
 npm run build:dev
 ```
@@ -49,12 +55,16 @@ npm run build:dev
 This should identify any compiler errors present in your source code.
 The webpack build configuration can be found in `webpack.config.cjs`.
 
+### Production Mode
+
 ```shell
 npm run build:prod
 ```
 
 `npm run build:prod` will bundle your sketch in production mode using webpack.
 The webpack build configuration can be found in `webpack.config.cjs`.
+
+### Development Mode with Single File Output
 
 ```shell
 npm run build:dev:single-file
@@ -64,6 +74,8 @@ npm run build:dev:single-file
 The resulting bundle will have your source code and all its dependencies in a single JavaScript file.
 This should identify any compiler errors present in your source code.
 The webpack build configuration can be found in `webpack.single-file.config.cjs`.
+
+### Production Mode with Single File Output
 
 ```shell
 npm run build:prod:single-file
@@ -75,11 +87,15 @@ The webpack build configuration can be found in `webpack.single-file.config.cjs`
 
 ## Serving
 
+### Serving the Development Bundle
+
 ```shell
 npm run dev
 ```
 
 `npm run dev` will bundle the sketch in development mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
+
+### Serving the Development Bundle with Single File Output
 
 ```shell
 npm run dev:single-file
@@ -87,11 +103,15 @@ npm run dev:single-file
 
 `npm run dev:single-file` will bundle the sketch in development mode with `webpack.single-file.config.cjs`, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
 
+### Serving the Production Bundle
+
 ```shell
 npm run dev:prod
 ```
 
 `npm run dev:prod` will bundle the sketch in production mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
+
+### Serving the Production Bundle with Single File Output
 
 ```shell
 npm run dev:prod:single-file

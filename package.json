@@ -14,7 +14,6 @@
     "dev:prod:single-file": "webpack-dev-server --mode production --config webpack.single-file.config.cjs",
     "lint:js": "eslint -c eslint.config.js.mjs ./eslint.config.js.mjs ./eslint.config.ts.mjs ./webpack.config.cjs ./webpack.single-file.config.cjs",
     "lint:ts": "eslint -c eslint.config.ts.mjs ./src",
-    "stats": "webpack --mode development --profile --json > ./out/stats.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

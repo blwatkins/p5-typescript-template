@@ -129,8 +129,8 @@ To learn more about Dependabot configurations, visit the
 To learn more about CodeQL configurations, visit the
 [GitHub CodeQL documentation](https://codeql.github.com/docs/).
 
-[![CodeQL](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/codeql.yml/badge.svg)](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/codeql.yml)
-[![npm Build](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/npm-build.yml/badge.svg)](https://github.com/brittni-and-the-polar-bear/p5-typescript-template/actions/workflows/npm-build.yml)
+[![CodeQL](https://github.com/blwatkins/p5-typescript-template/actions/workflows/codeql.yml/badge.svg)](https://github.com/blwatkins/p5-typescript-template/actions/workflows/codeql.yml)
+[![npm Build](https://github.com/blwatkins/p5-typescript-template/actions/workflows/npm-build.yml/badge.svg)](https://github.com/blwatkins/p5-typescript-template/actions/workflows/npm-build.yml)
 
 # Attributions
 

@@ -22,7 +22,7 @@
 
 import p5 from 'p5';
 
-import '../../assets/style/sketch.css';
+import '../assets/style/sketch.css';
 
 function sketch(ctx: p5): void {
     ctx.setup = (): void => {

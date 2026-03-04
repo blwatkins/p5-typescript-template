@@ -114,10 +114,10 @@ npm run serve
 ### Serving the Production Bundle with Single File Output
 
 ```shell
-npm run serve:single-file:dev
+npm run serve:single-file
 ```
 
-`npm run serve:single-file:dev` will bundle the sketch in production mode with `webpack.single-file.config.cjs`, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
+`npm run serve:single-file` will bundle the sketch in production mode with `webpack.single-file.config.cjs`, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
 
 # GitHub Workflows
 

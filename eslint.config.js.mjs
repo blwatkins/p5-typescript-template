@@ -18,7 +18,7 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-/* This configuration is designed to lint all JavaScript configuration files in the project. */
+/* This configuration is designed to lint all JavaScript files in the project. */
 
 import { defineConfig, globalIgnores } from 'eslint/config';
 

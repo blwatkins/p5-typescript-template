@@ -21,30 +21,52 @@
 /* This configuration is designed to lint all TypeScript files in the project. */
 
 import eslint from '@eslint/js';
-
-import es_x from 'eslint-plugin-es-x';
+import stylistic from '@stylistic/eslint-plugin';
+import esX from 'eslint-plugin-es-x';
 import node from 'eslint-plugin-n';
 import security from 'eslint-plugin-security';
-
-import stylistic from '@stylistic/eslint-plugin';
-
+import globals from 'globals';
 import tsEslint from 'typescript-eslint';
 
-export default tsEslint.config(
-    eslint.configs.recommended,
-    es_x.configs['flat/restrict-to-es2023'],
-    node.configs['flat/recommended'],
-    security.configs.recommended,
-    stylistic.configs['recommended'],
-    ...tsEslint.configs.recommendedTypeChecked,
-    ...tsEslint.configs.strictTypeChecked,
-    ...tsEslint.configs.stylisticTypeChecked,
+import { defineConfig, globalIgnores } from 'eslint/config';
+
+export default defineConfig([
+    globalIgnores(['_dist/**', '**/*.js', '**/*.cjs', '**/*.mjs']),
     {
+        files: [
+            '**/*.ts',
+            '**/*.d.ts',
+            '**/*.mts',
+            '**/*.d.mts',
+            '**/*.cts',
+            '**/*.d.cts',
+            '**/*.tsx'
+        ],
+        plugins: {
+            'eslint': eslint,
+            'es-x': esX,
+            'n': node,
+            'security': security,
+            '@stylistic': stylistic
+        },
+        extends: [
+            'eslint/recommended',
+            'es-x/flat/restrict-to-es2023',
+            'n/flat/recommended',
+            'security/recommended',
+            '@stylistic/recommended',
+            ...tsEslint.configs.recommendedTypeChecked,
+            ...tsEslint.configs.strictTypeChecked,
+            ...tsEslint.configs.stylisticTypeChecked
+        ],
         languageOptions: {
             ecmaVersion: 2023,
             sourceType: 'module',
             parserOptions: {
                 projectService: true
+            },
+            globals: {
+                ...globals.browser
             }
         },
         rules: {
@@ -227,4 +249,4 @@ export default tsEslint.config(
             }]
         }
     }
-);
+]);

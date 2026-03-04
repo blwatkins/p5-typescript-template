@@ -34,6 +34,9 @@
     "name": "brittni watkins",
     "url": "https://blwatkins.github.io/"
   },
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
   "license": "MIT",
   "dependencies": {
     "p5": "^2.2.2"

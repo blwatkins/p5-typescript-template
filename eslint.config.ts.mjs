@@ -49,6 +49,7 @@ export default tsEslint.config(
         },
         rules: {
             /* @eslint/js */
+
             'array-callback-return': ['error', {
                 checkForEach: true
             }],
@@ -90,6 +91,8 @@ export default tsEslint.config(
             'no-useless-assignment': 'error',
 
             'require-atomic-updates': 'error',
+
+            'require-await': 'error',
 
             'use-isnan': ['error', {
                 enforceForSwitchCase: true,
@@ -151,6 +154,22 @@ export default tsEslint.config(
             ],
 
             '@stylistic/semi': ['error', 'always'],
+
+            /* eslint-plugin-n */
+
+            'n/no-extraneous-import': 'error',
+
+            'n/no-missing-import': 'error',
+
+            'n/no-unsupported-features/es-syntax': ['error', {
+                version: '>=20.19.0',
+                ignores: []
+            }],
+
+            'n/no-unsupported-features/node-builtins': ['error', {
+                version: '>=20.19.0',
+                ignores: []
+            }],
 
             /* typescript-eslint */
 

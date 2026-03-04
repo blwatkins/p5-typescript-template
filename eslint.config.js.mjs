@@ -21,6 +21,7 @@
 /* This configuration is designed to lint all JavaScript configuration files in the project. */
 
 import eslint from '@eslint/js';
+import globals from 'globals';
 
 import es_x from 'eslint-plugin-es-x';
 import node from 'eslint-plugin-n';
@@ -37,7 +38,10 @@ export default [
     {
         languageOptions: {
             ecmaVersion: 2023,
-            sourceType: 'module'
+            sourceType: 'module',
+            globals: {
+                ...globals.node
+            }
         },
         rules: {
             /* @eslint/js */
@@ -82,6 +86,8 @@ export default [
             'no-useless-assignment': 'error',
 
             'require-atomic-updates': 'error',
+
+            'require-await': 'error',
 
             'use-isnan': ['error', {
                 enforceForSwitchCase: true,
@@ -142,7 +148,23 @@ export default [
                 }
             ],
 
-            '@stylistic/semi': ['error', 'always']
+            '@stylistic/semi': ['error', 'always'],
+
+            /* eslint-plugin-n */
+
+            'n/no-extraneous-import': 'error',
+
+            'n/no-missing-import': 'error',
+
+            'n/no-unsupported-features/es-syntax': ['error', {
+                version: '>=20.19.0',
+                ignores: []
+            }],
+
+            'n/no-unsupported-features/node-builtins': ['error', {
+                version: '>=20.19.0',
+                ignores: []
+            }]
         }
     }
 ];

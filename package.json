@@ -32,16 +32,16 @@
     "node": "^20.19.0 || ^22.13.0 || >=24"
   },
   "scripts": {
-    "build:dev": "webpack --mode development",
-    "build:single-file:dev": "webpack --mode development --config webpack.single-file.config.cjs",
     "build": "webpack --mode production",
-    "build:single-file": "webpack --mode production --config webpack.single-file.config.cjs",
-    "serve:dev": "webpack-dev-server --mode development",
-    "serve:single-file:dev": "webpack-dev-server --mode development --config webpack.single-file.config.cjs",
     "serve": "webpack-dev-server --mode production",
+    "build:single-file": "webpack --mode production --config webpack.single-file.config.cjs",
     "serve:single-file": "webpack-dev-server --mode production --config webpack.single-file.config.cjs",
+    "build:dev": "webpack --mode development",
+    "serve:dev": "webpack-dev-server --mode development",
+    "build:single-file:dev": "webpack --mode development --config webpack.single-file.config.cjs",
+    "serve:single-file:dev": "webpack-dev-server --mode development --config webpack.single-file.config.cjs",
     "lint:js": "eslint -c eslint.config.js.mjs .",
-    "lint:ts": "eslint -c eslint.config.ts.mjs ./src",
+    "lint:ts": "eslint -c eslint.config.ts.mjs .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

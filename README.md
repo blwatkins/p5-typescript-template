@@ -58,19 +58,19 @@ The webpack build configuration can be found in `webpack.config.cjs`.
 ### Production Mode
 
 ```shell
-npm run build:prod
+npm run build
 ```
 
-`npm run build:prod` will bundle your sketch in production mode using webpack.
+`npm run build` will bundle your sketch in production mode using webpack.
 The webpack build configuration can be found in `webpack.config.cjs`.
 
 ### Development Mode with Single File Output
 
 ```shell
-npm run build:dev:single-file
+npm run build:single-file:dev
 ```
 
-`npm run build:dev:single-file` will bundle your sketch in development mode using webpack.
+`npm run build:single-file:dev` will bundle your sketch in development mode using webpack.
 The resulting bundle will have your source code and all its dependencies in a single JavaScript file.
 This should identify any compiler errors present in your source code.
 The webpack build configuration can be found in `webpack.single-file.config.cjs`.
@@ -78,10 +78,10 @@ The webpack build configuration can be found in `webpack.single-file.config.cjs`
 ### Production Mode with Single File Output
 
 ```shell
-npm run build:prod:single-file
+npm run build:single-file
 ```
 
-`npm run build:prod:single-file` will bundle your sketch in production mode using webpack.
+`npm run build:single-file` will bundle your sketch in production mode using webpack.
 The resulting bundle will have your source code and all its dependencies in a single JavaScript file.
 The webpack build configuration can be found in `webpack.single-file.config.cjs`.
 
@@ -90,34 +90,34 @@ The webpack build configuration can be found in `webpack.single-file.config.cjs`
 ### Serving the Development Bundle
 
 ```shell
-npm run dev
+npm run serve:dev
 ```
 
-`npm run dev` will bundle the sketch in development mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
+`npm run serve:dev` will bundle the sketch in development mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
 
 ### Serving the Development Bundle with Single File Output
 
 ```shell
-npm run dev:single-file
+npm run serve:single-file:dev
 ```
 
-`npm run dev:single-file` will bundle the sketch in development mode with `webpack.single-file.config.cjs`, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
+`npm run serve:single-file:dev` will bundle the sketch in development mode with `webpack.single-file.config.cjs`, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
 
 ### Serving the Production Bundle
 
 ```shell
-npm run dev:prod
+npm run serve
 ```
 
-`npm run dev:prod` will bundle the sketch in production mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
+`npm run serve` will bundle the sketch in production mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
 
 ### Serving the Production Bundle with Single File Output
 
 ```shell
-npm run dev:prod:single-file
+npm run serve:single-file
 ```
 
-`npm run dev:prod:single-file` will bundle the sketch in production mode with `webpack.single-file.config.cjs`, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
+`npm run serve:single-file` will bundle the sketch in production mode with `webpack.single-file.config.cjs`, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
 
 # GitHub Workflows
 
@@ -141,9 +141,10 @@ You can find the original icon on
 
 # LICENSE
 
-This project is licensed under the MIT License.
-The full text of the license is included with this source code.
+The source code of this project is licensed under the
+[MIT License](https://opensource.org/license/mit).
+The full text of the license is included with the package source code.
 
 ----
 
-Copyright &copy; 2023-2025 brittni and the polar bear LLC.
+Copyright &copy; 2023-2026 brittni and the polar bear LLC.

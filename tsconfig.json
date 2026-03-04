@@ -2,7 +2,11 @@
   "compilerOptions": {
     /* Language and Environment */
     "target": "es2022",
-    "skipLibCheck": false,
+    /*
+    skipLibCheck set to true to avoid build errors.
+    Periodically check for updates to npm packages and set this to false when possible to ensure type safety.
+     */
+    "skipLibCheck": true,
     "skipDefaultLibCheck": false,
 
     /* Modules */

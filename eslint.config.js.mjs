@@ -20,16 +20,14 @@
 
 /* This configuration is designed to lint all JavaScript files in the project. */
 
-import { defineConfig, globalIgnores } from 'eslint/config';
-
 import eslint from '@eslint/js';
-import globals from 'globals';
-
+import stylistic from '@stylistic/eslint-plugin';
 import esX from 'eslint-plugin-es-x';
 import node from 'eslint-plugin-n';
 import security from 'eslint-plugin-security';
+import globals from 'globals';
 
-import stylistic from '@stylistic/eslint-plugin';
+import { defineConfig, globalIgnores } from 'eslint/config';
 
 export default defineConfig([
     globalIgnores(['_dist/**']),
@@ -37,7 +35,8 @@ export default defineConfig([
         files: [
             '**/*.js',
             '**/*.mjs',
-            '**/*.cjs'
+            '**/*.cjs',
+            '**/*.jsx'
         ],
         plugins: {
             'eslint': eslint,

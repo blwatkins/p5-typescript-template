@@ -31,7 +31,13 @@ import tsEslint from 'typescript-eslint';
 import { defineConfig, globalIgnores } from 'eslint/config';
 
 export default defineConfig([
-    globalIgnores(['_dist/**', '**/*.js', '**/*.cjs', '**/*.mjs']),
+    globalIgnores([
+        '_dist/**',
+        '**/*.js',
+        '**/*.cjs',
+        '**/*.mjs',
+        '**/*.jsx'
+    ]),
     {
         files: [
             '**/*.ts',

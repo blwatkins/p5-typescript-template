@@ -132,9 +132,16 @@ To learn more about CodeQL configurations, visit the
 [![CodeQL](https://github.com/blwatkins/p5-typescript-template/actions/workflows/codeql.yml/badge.svg)](https://github.com/blwatkins/p5-typescript-template/actions/workflows/codeql.yml)
 [![npm Build](https://github.com/blwatkins/p5-typescript-template/actions/workflows/npm-build.yml/badge.svg)](https://github.com/blwatkins/p5-typescript-template/actions/workflows/npm-build.yml)
 
-# Repository Stats
+# Repository Status Badges
 
+![GitHub License](https://img.shields.io/github/license/blwatkins/p5-typescript-template)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/blwatkins/p5-typescript-template)
+![GitHub last commit](https://img.shields.io/github/last-commit/blwatkins/p5-typescript-template)
 ![GitHub commits since latest release](https://img.shields.io/github/commits-since/blwatkins/p5-typescript-template/latest)
+![GitHub contributors](https://img.shields.io/github/contributors-anon/blwatkins/p5-typescript-template)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/blwatkins/p5-typescript-template)
+![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/blwatkins/p5-typescript-template)
+![GitHub language count](https://img.shields.io/github/languages/count/blwatkins/p5-typescript-template)
 
 # Attributions
 

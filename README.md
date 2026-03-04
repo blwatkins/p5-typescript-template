@@ -132,6 +132,10 @@ To learn more about CodeQL configurations, visit the
 [![CodeQL](https://github.com/blwatkins/p5-typescript-template/actions/workflows/codeql.yml/badge.svg)](https://github.com/blwatkins/p5-typescript-template/actions/workflows/codeql.yml)
 [![npm Build](https://github.com/blwatkins/p5-typescript-template/actions/workflows/npm-build.yml/badge.svg)](https://github.com/blwatkins/p5-typescript-template/actions/workflows/npm-build.yml)
 
+# Repository Stats
+
+![GitHub commits since latest release](https://img.shields.io/github/commits-since/blwatkins/p5-typescript-template/latest)
+
 # Attributions
 
 The favicon.ico of this template was designed by

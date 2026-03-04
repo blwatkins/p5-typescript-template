@@ -40,7 +40,7 @@
     "serve:single-file:dev": "webpack-dev-server --mode development --config webpack.single-file.config.cjs",
     "serve": "webpack-dev-server --mode production",
     "serve:single-file": "webpack-dev-server --mode production --config webpack.single-file.config.cjs",
-    "lint:js": "eslint -c eslint.config.js.mjs ./eslint.config.js.mjs ./eslint.config.ts.mjs ./webpack.config.cjs ./webpack.single-file.config.cjs",
+    "lint:js": "eslint -c eslint.config.js.mjs .",
     "lint:ts": "eslint -c eslint.config.ts.mjs ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

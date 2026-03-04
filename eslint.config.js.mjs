@@ -20,22 +20,39 @@
 
 /* This configuration is designed to lint all JavaScript configuration files in the project. */
 
+import { defineConfig, globalIgnores } from 'eslint/config';
+
 import eslint from '@eslint/js';
 import globals from 'globals';
 
-import es_x from 'eslint-plugin-es-x';
+import esX from 'eslint-plugin-es-x';
 import node from 'eslint-plugin-n';
 import security from 'eslint-plugin-security';
 
 import stylistic from '@stylistic/eslint-plugin';
 
-export default [
-    eslint.configs.recommended,
-    es_x.configs['flat/restrict-to-es2023'],
-    node.configs['flat/recommended'],
-    security.configs.recommended,
-    stylistic.configs['recommended'],
+export default defineConfig([
+    globalIgnores(['_dist/**']),
     {
+        files: [
+            '**/*.js',
+            '**/*.mjs',
+            '**/*.cjs'
+        ],
+        plugins: {
+            'eslint': eslint,
+            'es-x': esX,
+            'n': node,
+            'security': security,
+            '@stylistic': stylistic
+        },
+        extends: [
+            'eslint/recommended',
+            'es-x/flat/restrict-to-es2023',
+            'n/flat/recommended',
+            'security/recommended',
+            '@stylistic/recommended'
+        ],
         languageOptions: {
             ecmaVersion: 2023,
             sourceType: 'module',
@@ -45,6 +62,7 @@ export default [
         },
         rules: {
             /* @eslint/js */
+
             'array-callback-return': ['error', {
                 checkForEach: true
             }],
@@ -167,4 +185,4 @@ export default [
             }]
         }
     }
-];
+]);

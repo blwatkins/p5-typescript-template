@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     /* Language and Environment */
-    "target": "es2023",
+    "target": "es2022",
     /*
     skipLibCheck set to true to avoid build errors.
     Periodically check for updates to npm packages and set this to false when possible to ensure type safety.
@@ -10,14 +10,20 @@
     "skipDefaultLibCheck": false,
 
     /* Modules */
-    "module": "es2022",
+    "module": "esnext",
     "moduleResolution": "bundler",
     "rootDir": "./",
 
     /* JSON Modules */
     "resolveJsonModule": true,
-    "resolvePackageJsonExports": false,
-    "resolvePackageJsonImports": false,
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true,
+
+    /* Libraries */
+    "lib": [
+      "es2022",
+      "dom"
+    ],
 
     /* Emit */
     "outDir": "./_compiled",

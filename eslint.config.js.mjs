@@ -30,7 +30,10 @@ import globals from 'globals';
 import { defineConfig, globalIgnores } from 'eslint/config';
 
 export default defineConfig([
-    globalIgnores(['_dist/**']),
+    globalIgnores([
+        '_compiled/**',
+        '_dist/**'
+    ]),
     {
         files: [
             '**/*.js',
@@ -39,14 +42,13 @@ export default defineConfig([
             '**/*.jsx'
         ],
         plugins: {
-            'eslint': eslint,
             'es-x': esX,
             'n': node,
             'security': security,
             '@stylistic': stylistic
         },
         extends: [
-            'eslint/recommended',
+            eslint.configs.recommended,
             'es-x/flat/restrict-to-es2023',
             'n/flat/recommended',
             'security/recommended',

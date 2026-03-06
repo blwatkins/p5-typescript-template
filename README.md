@@ -5,7 +5,10 @@ A template project for using
 with
 [TypeScript](https://www.typescriptlang.org/)
 and
-[webpack](https://webpack.js.org/).
+[webpack](https://webpack.js.org/)
+in the
+[Node.js](https://nodejs.org/en)
+runtime environment.
 
 # Getting Started
 

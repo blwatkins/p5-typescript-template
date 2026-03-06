@@ -21,34 +21,57 @@
 /* This configuration is designed to lint all TypeScript files in the project. */
 
 import eslint from '@eslint/js';
-
-import es_x from 'eslint-plugin-es-x';
-import node from 'eslint-plugin-n';
-import security from 'eslint-plugin-security';
-
 import stylistic from '@stylistic/eslint-plugin';
-
+import esX from 'eslint-plugin-es-x';
+import globals from 'globals';
 import tsEslint from 'typescript-eslint';
 
-export default tsEslint.config(
-    eslint.configs.recommended,
-    es_x.configs['flat/restrict-to-es2023'],
-    node.configs['flat/recommended'],
-    security.configs.recommended,
-    stylistic.configs['recommended'],
-    ...tsEslint.configs.recommendedTypeChecked,
-    ...tsEslint.configs.strictTypeChecked,
-    ...tsEslint.configs.stylisticTypeChecked,
+import { defineConfig, globalIgnores } from 'eslint/config';
+
+export default defineConfig([
+    globalIgnores([
+        '_compiled/**',
+        '_dist/**',
+        '**/*.js',
+        '**/*.cjs',
+        '**/*.mjs',
+        '**/*.jsx'
+    ]),
     {
+        files: [
+            '**/*.ts',
+            '**/*.d.ts',
+            '**/*.mts',
+            '**/*.d.mts',
+            '**/*.cts',
+            '**/*.d.cts',
+            '**/*.tsx'
+        ],
+        plugins: {
+            'es-x': esX,
+            '@stylistic': stylistic
+        },
+        extends: [
+            eslint.configs.recommended,
+            'es-x/flat/restrict-to-es2022',
+            '@stylistic/recommended',
+            ...tsEslint.configs.recommendedTypeChecked,
+            ...tsEslint.configs.strictTypeChecked,
+            ...tsEslint.configs.stylisticTypeChecked
+        ],
         languageOptions: {
-            ecmaVersion: 2023,
+            ecmaVersion: 2022,
             sourceType: 'module',
             parserOptions: {
                 projectService: true
+            },
+            globals: {
+                ...globals.browser
             }
         },
         rules: {
             /* @eslint/js */
+
             'array-callback-return': ['error', {
                 checkForEach: true
             }],
@@ -90,6 +113,8 @@ export default tsEslint.config(
             'no-useless-assignment': 'error',
 
             'require-atomic-updates': 'error',
+
+            'require-await': 'error',
 
             'use-isnan': ['error', {
                 enforceForSwitchCase: true,
@@ -208,4 +233,4 @@ export default tsEslint.config(
             }]
         }
     }
-);
+]);

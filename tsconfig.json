@@ -10,17 +10,23 @@
     "skipDefaultLibCheck": false,
 
     /* Modules */
-    "module": "es2022",
+    "module": "esnext",
     "moduleResolution": "bundler",
-    "rootDir": "./src",
+    "rootDir": "./",
 
     /* JSON Modules */
     "resolveJsonModule": true,
-    "resolvePackageJsonExports": false,
-    "resolvePackageJsonImports": false,
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true,
+
+    /* Libraries */
+    "lib": [
+      "es2022",
+      "dom"
+    ],
 
     /* Emit */
-    "outDir": "./out/compiled",
+    "outDir": "./_compiled",
     "sourceMap": true,
     "declaration": false,
     "declarationMap": false,

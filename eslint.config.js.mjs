@@ -23,8 +23,6 @@
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 import esX from 'eslint-plugin-es-x';
-import node from 'eslint-plugin-n';
-import security from 'eslint-plugin-security';
 import globals from 'globals';
 
 import { defineConfig, globalIgnores } from 'eslint/config';
@@ -43,19 +41,15 @@ export default defineConfig([
         ],
         plugins: {
             'es-x': esX,
-            'n': node,
-            'security': security,
             '@stylistic': stylistic
         },
         extends: [
             eslint.configs.recommended,
-            'es-x/flat/restrict-to-es2023',
-            'n/flat/recommended',
-            'security/recommended',
+            'es-x/flat/restrict-to-es2022',
             '@stylistic/recommended'
         ],
         languageOptions: {
-            ecmaVersion: 2023,
+            ecmaVersion: 2022,
             sourceType: 'module',
             globals: {
                 ...globals.node
@@ -167,23 +161,7 @@ export default defineConfig([
                 }
             ],
 
-            '@stylistic/semi': ['error', 'always'],
-
-            /* eslint-plugin-n */
-
-            'n/no-extraneous-import': 'error',
-
-            'n/no-missing-import': 'error',
-
-            'n/no-unsupported-features/es-syntax': ['error', {
-                version: '>=20.19.0',
-                ignores: []
-            }],
-
-            'n/no-unsupported-features/node-builtins': ['error', {
-                version: '>=20.19.0',
-                ignores: []
-            }]
+            '@stylistic/semi': ['error', 'always']
         }
     }
 ]);

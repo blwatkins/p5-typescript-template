@@ -1,11 +1,7 @@
 # p5.js TypeScript Template
 
-A template project for using
-[p5.js](https://p5js.org/)
-with
-[TypeScript](https://www.typescriptlang.org/)
-and
-[webpack](https://webpack.js.org/).
+A template project for using [p5.js](https://p5js.org/) with [TypeScript](https://www.typescriptlang.org/) and [webpack](https://webpack.js.org/).
+Webpack runs in the [Node.js](https://nodejs.org/en) runtime environment to bundle the sketch for execution in a web browser.
 
 # Getting Started
 

@@ -29,7 +29,6 @@ module.exports = {
             import: './src/sketch.ts'
         }
     },
-    devtool: 'inline-source-map',
     module: {
         rules: [
             {

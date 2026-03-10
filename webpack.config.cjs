@@ -31,7 +31,6 @@ module.exports = {
         },
         p5: 'p5'
     },
-    devtool: 'inline-source-map',
     module: {
         rules: [
             {

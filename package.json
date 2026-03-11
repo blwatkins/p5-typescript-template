@@ -39,7 +39,7 @@
     "serve:dev": "webpack-dev-server --mode development",
     "build:single-file:dev": "webpack --mode development --config webpack.single-file.config.cjs",
     "serve:single-file:dev": "webpack-dev-server --mode development --config webpack.single-file.config.cjs",
-    "build:all": "npm run build && npm run build:single-file && npm run build:dev && npm run build:single-file:dev",
+    "build:check": "npm run build:dev && npm run build:single-file:dev && npm run build && npm run build:single-file",
     "lint:js": "eslint -c eslint.config.js.mjs .",
     "lint:ts": "eslint -c eslint.config.ts.mjs .",
     "lint:all": "npm run lint:js && npm run lint:ts",

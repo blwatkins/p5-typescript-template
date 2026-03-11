@@ -1,4 +1,4 @@
-Copyright (C) $originalComment.match("Copyright \(C\) (\d+)", 1, "-", "$today.year")$today.year brittni and the polar bear LLC.
+Copyright (C) $originalComment.match("Copyright \(C\) (\d+)", 1, "-", "$today.year")$today.year Brittni Watkins.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"),

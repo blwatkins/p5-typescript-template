@@ -1,6 +1,6 @@
 {
   "name": "p5-typescript-template",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "license": "MIT",
   "private": true,
   "description": "A template project for using p5.js with TypeScript and Webpack.",
@@ -15,7 +15,7 @@
     "template"
   ],
   "author": {
-    "name": "brittni watkins",
+    "name": "Brittni Watkins",
     "url": "https://blwatkins.github.io/"
   },
   "homepage": "https://github.com/blwatkins/p5-typescript-template#readme",
@@ -39,8 +39,10 @@
     "serve:dev": "webpack-dev-server --mode development",
     "build:single-file:dev": "webpack --mode development --config webpack.single-file.config.cjs",
     "serve:single-file:dev": "webpack-dev-server --mode development --config webpack.single-file.config.cjs",
+    "build:check": "npm run build:dev && npm run build:single-file:dev && npm run build && npm run build:single-file",
     "lint:js": "eslint -c eslint.config.js.mjs .",
     "lint:ts": "eslint -c eslint.config.ts.mjs .",
+    "lint:all": "npm run lint:js && npm run lint:ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

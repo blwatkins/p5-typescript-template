@@ -154,4 +154,4 @@ The full text of the license is included with the package source code.
 
 ----
 
-Copyright &copy; 2023-2026 brittni and the polar bear LLC.
+Copyright &copy; 2023-2026 Brittni Watkins.

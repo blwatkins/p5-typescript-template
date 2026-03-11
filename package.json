@@ -15,7 +15,7 @@
     "template"
   ],
   "author": {
-    "name": "brittni watkins",
+    "name": "Brittni Watkins",
     "url": "https://blwatkins.github.io/"
   },
   "homepage": "https://github.com/blwatkins/p5-typescript-template#readme",
@@ -39,8 +39,10 @@
     "serve:dev": "webpack-dev-server --mode development",
     "build:single-file:dev": "webpack --mode development --config webpack.single-file.config.cjs",
     "serve:single-file:dev": "webpack-dev-server --mode development --config webpack.single-file.config.cjs",
+    "build:all": "npm run build && npm run build:single-file && npm run build:dev && npm run build:single-file:dev",
     "lint:js": "eslint -c eslint.config.js.mjs .",
     "lint:ts": "eslint -c eslint.config.ts.mjs .",
+    "lint:all": "npm run lint:js && npm run lint:ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

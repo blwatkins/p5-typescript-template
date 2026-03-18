@@ -3,6 +3,28 @@
 A template project for using [p5.js](https://p5js.org/) with [TypeScript](https://www.typescriptlang.org/) and [webpack](https://webpack.js.org/).
 Webpack runs in the [Node.js](https://nodejs.org/en) runtime environment to bundle the sketch for execution in a web browser.
 
+# Table of Contents
+
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Linting](#linting)
+    - [Linting TypeScript](#linting-typescript)
+    - [Linting JavaScript](#linting-javascript)
+  - [Building](#building)
+    - [Development Mode](#development-mode)
+    - [Production Mode](#production-mode)
+    - [Development Mode with Single File Output](#development-mode-with-single-file-output)
+    - [Production Mode with Single File Output](#production-mode-with-single-file-output)
+  - [Serving](#serving)
+    - [Serving the Development Bundle](#serving-the-development-bundle)
+    - [Serving the Development Bundle with Single File Output](#serving-the-development-bundle-with-single-file-output)
+    - [Serving the Production Bundle](#serving-the-production-bundle)
+    - [Serving the Production Bundle with Single File Output](#serving-the-production-bundle-with-single-file-output)
+- [GitHub Workflows](#github-workflows)
+- [Repository Status Badges](#repository-status-badges)
+- [Attributions](#attributions)
+- [LICENSE](#license)
+
 # Getting Started
 
 Create a new project from this template using the green "Use this template" button above.

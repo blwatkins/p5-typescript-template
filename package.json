@@ -1,19 +1,8 @@
 {
-  "name": "p5-typescript-template",
-  "version": "4.1.0",
+  "name": "p5-webpack-typescript-template",
   "license": "MIT",
   "private": true,
-  "description": "A template project for using p5.js with TypeScript and Webpack.",
-  "keywords": [
-    "algorithmic art",
-    "code art",
-    "generative art",
-    "p5",
-    "p5.js",
-    "p5js",
-    "typescript",
-    "template"
-  ],
+  "description": "A template project for using p5.js with TypeScript and webpack.",
   "author": {
     "name": "Brittni Watkins",
     "url": "https://blwatkins.github.io/"
@@ -46,22 +35,21 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "p5": "^2.2.2"
+    "p5": "^2.2.3"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
     "css-loader": "^7.1.4",
-    "eslint": "^10.0.3",
-    "eslint-plugin-es-x": "^9.5.0",
-    "globals": "^17.4.0",
+    "eslint": "^10.1.0",
+    "eslint-plugin-es-x": "^9.6.0",
     "html-webpack-plugin": "^5.6.6",
-    "mini-css-extract-plugin": "^2.10.0",
+    "mini-css-extract-plugin": "^2.10.1",
     "ts-loader": "^9.5.4",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.56.1",
+    "typescript-eslint": "^8.57.2",
     "webpack": "^5.105.4",
-    "webpack-cli": "^6.0.1",
+    "webpack-cli": "^7.0.2",
     "webpack-dev-server": "^5.2.3"
   }
 }

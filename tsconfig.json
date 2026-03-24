@@ -25,7 +25,7 @@
 
     /* Emit */
     "outDir": "./_compiled",
-    "sourceMap": true,
+    "sourceMap": false,
     "declaration": false,
     "declarationMap": false,
     "removeComments": true,

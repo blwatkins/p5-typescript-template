@@ -146,10 +146,9 @@ The favicon.ico of this template was designed by
 You can find the original icon on
 [flaticon.com](https://www.flaticon.com/free-icon/art_1756752?term=art&page=1&position=38&origin=search&related_id=1756752).
 
-# LICENSE
+# License
 
-The source code of this project is licensed under the
-[MIT License](https://opensource.org/license/mit).
+The source code of this project is licensed under the [MIT License](https://opensource.org/license/mit).
 The full text of the license is included with the package source code.
 
 ----

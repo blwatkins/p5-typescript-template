@@ -45,8 +45,8 @@ export default defineConfig([
         },
         extends: [
             eslint.configs.recommended,
-            'es-x/flat/restrict-to-es2022',
-            '@stylistic/recommended'
+            stylistic.configs.recommended,
+            esX.configs['flat/restrict-to-es2022']
         ],
         languageOptions: {
             ecmaVersion: 2022,

@@ -45,8 +45,8 @@ export default defineConfig([
         },
         extends: [
             eslint.configs.recommended,
-            stylistic.configs.recommended,
-            esX.configs['flat/restrict-to-es2022']
+            'es-x/flat/restrict-to-es2022',
+            '@stylistic/recommended'
         ],
         languageOptions: {
             ecmaVersion: 2022,
@@ -151,7 +151,7 @@ export default defineConfig([
                 }
             }],
 
-            '@stylistic/operator-linebreak': ['error', 'after'],
+            '@stylistic/operator-linebreak': ['error', 'before'],
 
             '@stylistic/quotes': ['error',
                 'single',

@@ -160,12 +160,18 @@ To learn more about CodeQL configurations, visit the
 ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/blwatkins/p5-typescript-template)
 ![GitHub language count](https://img.shields.io/github/languages/count/blwatkins/p5-typescript-template)
 
-# Attributions
+## Attributions
 
-The favicon.ico of this template was designed by
-[Freepik from Flaticon](https://www.flaticon.com/free-icons/art).
-You can find the original icon on
-[flaticon.com](https://www.flaticon.com/free-icon/art_1756752?term=art&page=1&position=38&origin=search&related_id=1756752).
+### Favicon
+
+The favicon for this template project is an artist palette emoji, which is used to represent creativity and artistic expression.
+The favicon was generated from the Artist Palette emoji using [Favicon Generator](https://favicon.io/).
+
+This favicon was generated using the following graphics from Twitter Twemoji:
+- Graphics Title: 1f3a8.svg
+- Graphics Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji)
+- Graphics Source: https://github.com/twitter/twemoji/blob/master/assets/svg/1f3a8.svg
+- Graphics License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 # License
 

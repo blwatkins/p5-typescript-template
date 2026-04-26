@@ -7,13 +7,13 @@
     "name": "Brittni Watkins",
     "url": "https://blwatkins.github.io/"
   },
-  "homepage": "https://github.com/blwatkins/p5-typescript-template#readme",
+  "homepage": "https://github.com/blwatkins/p5-webpack-typescript-template#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/blwatkins/p5-typescript-template.git"
+    "url": "https://github.com/blwatkins/p5-webpack-typescript-template.git"
   },
   "bugs": {
-    "url": "https://github.com/blwatkins/p5-typescript-template/issues"
+    "url": "https://github.com/blwatkins/p5-webpack-typescript-template/issues"
   },
   "type": "module",
   "engines": {

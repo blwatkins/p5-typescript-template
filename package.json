@@ -7,13 +7,13 @@
     "name": "Brittni Watkins",
     "url": "https://blwatkins.github.io/"
   },
-  "homepage": "https://github.com/blwatkins/p5-typescript-template#readme",
+  "homepage": "https://github.com/blwatkins/p5-webpack-typescript-template#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/blwatkins/p5-typescript-template.git"
+    "url": "https://github.com/blwatkins/p5-webpack-typescript-template.git"
   },
   "bugs": {
-    "url": "https://github.com/blwatkins/p5-typescript-template/issues"
+    "url": "https://github.com/blwatkins/p5-webpack-typescript-template/issues"
   },
   "type": "module",
   "engines": {
@@ -22,13 +22,9 @@
   "scripts": {
     "build": "webpack --mode production",
     "serve": "webpack-dev-server --mode production",
-    "build:single-file": "webpack --mode production --config webpack.single-file.config.cjs",
-    "serve:single-file": "webpack-dev-server --mode production --config webpack.single-file.config.cjs",
     "build:dev": "webpack --mode development",
     "serve:dev": "webpack-dev-server --mode development",
-    "build:single-file:dev": "webpack --mode development --config webpack.single-file.config.cjs",
-    "serve:single-file:dev": "webpack-dev-server --mode development --config webpack.single-file.config.cjs",
-    "build:check": "npm run build:dev && npm run build:single-file:dev && npm run build && npm run build:single-file",
+    "build:check": "npm run build:dev && npm run build",
     "lint:js": "eslint -c eslint.config.js.mjs .",
     "lint:ts": "eslint -c eslint.config.ts.mjs .",
     "lint:all": "npm run lint:js && npm run lint:ts",
@@ -41,15 +37,15 @@
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
     "css-loader": "^7.1.4",
-    "eslint": "^10.1.0",
+    "eslint": "^10.2.1",
     "eslint-plugin-es-x": "^9.6.0",
-    "globals": "^17.4.0",
-    "html-webpack-plugin": "^5.6.6",
+    "globals": "^17.5.0",
+    "html-webpack-plugin": "^5.6.7",
     "mini-css-extract-plugin": "^2.10.2",
     "ts-loader": "^9.5.7",
-    "typescript": "^6.0.2",
-    "typescript-eslint": "^8.58.0",
-    "webpack": "^5.105.4",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.0",
+    "webpack": "^5.106.2",
     "webpack-cli": "^7.0.2",
     "webpack-dev-server": "^5.2.3"
   }

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-2026 Brittni Watkins.
+ * Copyright (c) 2024-2026 Brittni Watkins.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"),
@@ -18,17 +18,17 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const path = require('path');
+import path from 'path';
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
-module.exports = {
-    entry: {
-        main: {
-            import: './src/sketch.ts'
-        }
-    },
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+export default {
+    entry: './src/sketch.ts',
     module: {
         rules: [
             {
@@ -43,24 +43,26 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.ts', '.js']
+        extensions: ['.tsx', '.ts', '.js']
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'template sketch',
+            title: 'p5.js Sketch',
             inject: 'body',
             favicon: './assets/icon/favicon.ico'
         }),
-        new MiniCssExtractPlugin()
+        new MiniCssExtractPlugin({
+            filename: '[name].[contenthash:6].css',
+            chunkFilename: '[name].[contenthash:6].css'
+        })
     ],
     optimization: {
         emitOnErrors: false
     },
     output: {
         path: path.resolve(__dirname, '_dist'),
-        filename: '[name].js',
-        sourceMapFilename: '[name].map',
-        chunkFilename: '[name].js',
+        filename: '[name].[contenthash:6].js',
+        chunkFilename: '[name].[contenthash:6].js',
         clean: true
     },
     devServer: {
@@ -73,10 +75,10 @@ module.exports = {
         compress: true,
         host: '127.0.0.1',
         port: 8080,
-        hot: false,
+        hot: true,
         watchFiles: ['./src/**/*.ts'],
         liveReload: true,
         open: true,
-        webSocketServer: false
+        webSocketServer: 'ws'
     }
 };

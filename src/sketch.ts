@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-2026 Brittni Watkins.
+ * Copyright (c) 2024-2026 Brittni Watkins.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"),
@@ -20,7 +20,7 @@
 
 import p5 from 'p5';
 
-import '../assets/style/sketch.css';
+import '../assets/css/sketch.css';
 
 function sketch(ctx: p5): void {
     ctx.setup = (): void => {

@@ -53,8 +53,8 @@ export default defineConfig([
         },
         extends: [
             eslint.configs.recommended,
-            stylistic.configs.recommended,
-            esX.configs['flat/restrict-to-es2022'],
+            'es-x/flat/restrict-to-es2022',
+            '@stylistic/recommended',
             ...tsEslint.configs.recommendedTypeChecked,
             ...tsEslint.configs.strictTypeChecked,
             ...tsEslint.configs.stylisticTypeChecked
@@ -165,7 +165,7 @@ export default defineConfig([
                 }
             }],
 
-            '@stylistic/operator-linebreak': ['error', 'after'],
+            '@stylistic/operator-linebreak': ['error', 'before'],
 
             '@stylistic/quotes': ['error',
                 'single',
@@ -217,6 +217,8 @@ export default defineConfig([
 
             '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
 
+            '@typescript-eslint/no-dynamic-delete': 'error',
+
             '@typescript-eslint/no-explicit-any': 'error',
 
             '@typescript-eslint/no-extraneous-class': ['error', {
@@ -224,6 +226,8 @@ export default defineConfig([
             }],
 
             '@typescript-eslint/no-inferrable-types': 'off',
+
+            '@typescript-eslint/no-unsafe-member-access': 'error',
 
             '@typescript-eslint/prefer-for-of': 'error',
 

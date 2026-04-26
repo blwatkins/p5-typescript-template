@@ -88,7 +88,7 @@ The webpack build configuration can be found in `webpack.config.mjs`.
 npm run serve:dev
 ```
 
-`npm run serve:dev` will bundle the scene in development mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled scene.
+`npm run serve:dev` will bundle the sketch in development mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
 
 #### Serving the Production Bundle
 
@@ -96,7 +96,7 @@ npm run serve:dev
 npm run serve
 ```
 
-`npm run serve` will bundle the scene in production mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled scene.
+`npm run serve` will bundle the sketch in production mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
 
 ## GitHub Workflows
 
